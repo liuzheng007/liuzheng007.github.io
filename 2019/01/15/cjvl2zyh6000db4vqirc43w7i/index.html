@@ -7,20 +7,19 @@
   
   
   
-  <title>abstract | 个人博客</title>
+  <title>单幅图像人脸三维重建综述 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2018（非专业方向）书籍阅读：《金阁寺》三岛由纪夫《数学之美》吴军《刺杀骑士团长》村上春树">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="1.概念：人脸3D重建是指从一张或多张2D图像中重建出人脸的3D模型。可以用这样一个表达式来建模3D人脸模型：M = （S,T）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="abstract">
-<meta property="og:url" content="https://liuzheng007.github.io/2018/04/10/cjvl2sy5w00069gvq7wktzl23/index.html">
+<meta property="og:title" content="单幅图像人脸三维重建综述">
+<meta property="og:url" content="https://liuzheng007.github.io/2019/01/15/cjvl2zyh6000db4vqirc43w7i/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="2018（非专业方向）书籍阅读：《金阁寺》三岛由纪夫《数学之美》吴军《刺杀骑士团长》村上春树">
+<meta property="og:description" content="1.概念：人脸3D重建是指从一张或多张2D图像中重建出人脸的3D模型。可以用这样一个表达式来建模3D人脸模型：M = （S,T）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-10T14:19:57.996Z">
+<meta property="og:updated_time" content="2019-05-12T04:03:17.132Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="abstract">
-<meta name="twitter:description" content="2018（非专业方向）书籍阅读：《金阁寺》三岛由纪夫《数学之美》吴军《刺杀骑士团长》村上春树">
+<meta name="twitter:title" content="单幅图像人脸三维重建综述">
+<meta name="twitter:description" content="1.概念：人脸3D重建是指从一张或多张2D图像中重建出人脸的3D模型。可以用这样一个表达式来建模3D人脸模型：M = （S,T）">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -268,11 +267,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-abstract" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-单幅图像人脸三维重建综述" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" class="article-date">
-      <time datetime="2018-04-09T23:20:23.000Z" itemprop="datePublished">2018-04-10</time>
+      <a href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/" class="article-date">
+      <time datetime="2019-01-15T07:12:40.000Z" itemprop="datePublished">2019-01-15</time>
 </a>
 
     </div>
@@ -286,7 +285,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      abstract
+      单幅图像人脸三维重建综述
     </h1>
   
 
@@ -297,10 +296,6 @@
         
 
         
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -308,7 +303,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>2018（非专业方向）书籍阅读：<br>《金阁寺》三岛由纪夫<br>《数学之美》吴军<br>《刺杀骑士团长》村上春树</p>
+        <p>1.概念：人脸3D重建是指从一张或多张2D图像中重建出人脸的3D模型。<br>可以用这样一个表达式来建模3D人脸模型：M = （S,T）<br><a id="more"></a><br>其中：S表示人脸3D坐标形状向量（shape-vector）<br>T表示对应点的文理信息向量（texture-vector）</p>
+<p>2D的人脸图片可以看作是3D人脸在2D平面上的一个投影，所以3D人脸重建就是从2D图片中计算出M的估计。<br>2.重建方法分类:<br>20年来，基于 2D人脸图像到3D人脸重建方法很多，大致分类如下<br>⑴传统3D人脸重建方法，大多是立足于图像信息，如基于图像亮度、边缘信息、线性透视、颜色、相对高度、视差等等一种或多种信息建模技术进行3D人脸重建。<br>⑵基于模型的3D人脸重建方法，是目前较为流行的3D人脸重建方法；3D模型主要用三角网格或点云来表示，现下流行的模型有通用人脸模型（CANDIDE-3）和三维变形模型（3DMM）及其变种模型，基于它们的3D人脸重建算法既有传统算法也有深度学习算法。<br>⑶端到端3D人脸重建方法，是近年新起的方法；它们绕开了人脸模型，设计自己的3D人脸表示方法，采用CNN结构进行直接回归，端到端地重建3D人脸。</p>
+<p>传统最经典的基于二维图像的三维重建方法中最经典的一种是阴影重建算法（SFS），被用于3D人脸重建，后来有一系列的优化和改进。（RJ Woodham在1980年首次利用PS(photometric stereo)重建三维模型，PS的理论依据是物体表面反射光的强度与物体的表面与光的夹角以及观察的位置相关，利用不小于三张视角固定且光照不同的图像来恢复形状和反射率[8]。SFS(shape-from-shading)是PS的特例。与传统PS的区别是，SFS可以从一张图像重建三维模型，由Horn在1989年提出）<br>为了得到人脸的通用模型，通常有三种方法：第一种方法是采用三维扫描仪获取数据，此方法采集精度高但设备价格昂贵；第二种方法是采用计算机图形技术创建人脸；第三种是利用一些商业的建模软件生成人脸通用模型，目前在市场上比较著名的人头模型生成商业软件有FaceGen Modeller，3D Max 和Poser7.0 等等。<br>（在众多通用人脸模型中，CANDIDE-3模型是目前被学术界广泛使用的一种通用模型，其符合MPEG-4标准中对人脸的定义。CANDIDE-3模型总共有113个顶点，168个面组成，可以通过对这些点和面的操作调节形成特定的人脸，）<br>通用模型重建法的本质是对通用模型进行修改，使得其特征与所需要3D重建的输入图像相配.一般包括整体性调整和局部性调整两个方面。整体性调整主要是针对模型的轮廓，通过一定的方法(如特征点对应)使得通用模型的整体布局（如眼耳鼻眉）和输入图片的五官布局尽量一致；局部性调整指的是针对局部细节尤其是人脸五官的微调，让局部细节更为精确。在进行完这两项调整之后，再辅助以基于顶点的插值运算就可以重建人脸。通用模型法的优点是计算量较小，但其显著缺陷就是因顶点数目过少导致对人脸轮廓的模拟和面部细节刻画不够细腻，故只能适用于精度要求不高的场合。</p>
+<p>另外还有基于形变模型的3D人脸重建（3DMM）。<br>形变模型（Morphable Model）这一名词来源于计算机图形学中一个名叫Morphing技术的图像生成算法。Morphing 技术主要思想：如果两幅图像中存在一定的对应关系，那么就可以利用这个对应关系生成具一副有平滑过渡效果的图像。<br>三维形变模型(3DMM)建立在三维人脸数据库的基础上，以人脸形状(S)和人脸纹理(T)统计为约束，同时考虑到了人脸的姿态和光照因素的影响，因而生成的三维人脸模型精度更高。<br> 3DMM模型数据库是人脸数据对象的线性组合，假设要建立的3D变形的人脸模型由m个人脸模型组成，其中每一个人脸模型都包含相应的Si，Ti两种向量，这样在表示新的3D人脸模型时，我们就可以用这种方式：</p>
+<p>其中S平均表示平均脸部形状模型，si表示shape的PCA部分，αi表示对应系数。（主成分分析法PCA是非常常用的数据降维方法。它的基本思想是从一组特征中计算出一组按照重要性的大小从大到小依次排列的新特征，它们是原有特征的线性组合，并且新特征之间不相关, 我们计算出原有特征在新特征上的映射值即为新的降维后的样本。也就是说PCA的目标是用一组正交向量来对原特征进行变换得到新特征，新特征是原有特征的线性组合<a href="https://blog.csdn.net/weixin_39986952/article/details/80428421）。" target="_blank" rel="noopener">https://blog.csdn.net/weixin_39986952/article/details/80428421）。</a><br>T部分类同。</p>
 
       
     </div>
@@ -317,13 +316,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/">abstract</a></p>
+        <p><span>本文标题:</span><a href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/">单幅图像人脸三维重建综述</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 刘政 的个人博客">刘政</a></p>
-        <p><span>发布时间:</span>2018年04月10日 - 07时20分</p>
-        <p><span>最后更新:</span>2018年05月10日 - 22时19分</p>
+        <p><span>发布时间:</span>2019年01月15日 - 15时12分</p>
+        <p><span>最后更新:</span>2019年05月12日 - 12时03分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" title="abstract">https://liuzheng007.github.io/2018/04/10/cjvl2sy5w00069gvq7wktzl23/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://liuzheng007.github.io/2018/04/10/cjvl2sy5w00069gvq7wktzl23/　　作者: 刘政" title></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/" title="单幅图像人脸三维重建综述">https://liuzheng007.github.io/2019/01/15/cjvl2zyh6000db4vqirc43w7i/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://liuzheng007.github.io/2019/01/15/cjvl2zyh6000db4vqirc43w7i/　　作者: 刘政" title></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -334,18 +333,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/04/18/cjvl2sy6e000q9gvqy2oxd19w/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          tensorflow学习笔记整合
+          强化学习 学习报告
         
       </div>
     </a>
   
   
-    <a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">递归与迭代</div>
+    <a href="/2018/07/29/cjvl2zygz0006b4vqdpkje2m6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">revolution and evolution 《底特律：变人》：人之所以为人</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -442,18 +441,18 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/04/18/cjvl2sy6e000q9gvqy2oxd19w/" title="上一篇: tensorflow学习笔记整合">
+            <a href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/" title="上一篇: 强化学习 学习报告">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" title="下一篇: 递归与迭代">
+            <a href="/2018/07/29/cjvl2zygz0006b4vqdpkje2m6/" title="下一篇: revolution and evolution 《底特律：变人》：人之所以为人">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/12/cjvl2sy6b000l9gvqoenesqb5/">强化学习 学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/15/cjvl2sy65000d9gvq492hz6bl/">单幅图像人脸三维重建综述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/29/cjvl2sy69000j9gvqpw8wg3bs/">revolution and evolution 《底特律：变人》：人之所以为人</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/27/cjvl2sy67000h9gvq6o29bsea/">基础数学知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/cjvl2sy6100099gvqypnsi68q/">一日内完成python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/cjvl2sy66000g9gvq7lm0rx6v/">基于TensorFlow学习VGG-net</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/cjvl2sy5h00019gvqkg0c7hb1/">DCGAN的原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/cjvl2sy5n00039gvqtm3oi96p/">GAN学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/cjvl2sy64000c9gvq6ldq9nw4/">使用tensorflow实现cnn</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/19/cjvl2sy5z00089gvqykut9vpl/">ubuntu之apt-get与pip的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/18/cjvl2sy6e000q9gvqy2oxd19w/">tensorflow学习笔记整合</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/">abstract</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/">递归与迭代</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/">强化学习 学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/">单幅图像人脸三维重建综述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/29/cjvl2zygz0006b4vqdpkje2m6/">revolution and evolution 《底特律：变人》：人之所以为人</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/27/cjvl2zyhr000qb4vq8mz1c67l/">基础数学知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/cjvl2zyh8000gb4vquzio23xk/">一日内完成python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/cjvl2zyhc000mb4vqwhc2heyy/">基于TensorFlow学习VGG-net</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/cjvl2zygo0001b4vqrni2o0ds/">DCGAN的原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/cjvl2zyh30008b4vqh8dixplb/">GAN学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/cjvl2zyh9000ib4vqpm1nh2q8/">使用tensorflow实现cnn</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/19/cjvl2zyh5000bb4vq9bwh7w08/">ubuntu之apt-get与pip的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/18/cjvl2zyh20007b4vqqxrxf4z9/">tensorflow学习笔记整合</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/10/cjvl2zygt0003b4vquo9e737o/">abstract</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/cjvl2zyhq000ob4vqyg9acr6f/">递归与迭代</a></li></ul>
     
 <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 

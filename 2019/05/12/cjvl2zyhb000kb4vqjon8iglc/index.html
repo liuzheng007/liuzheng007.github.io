@@ -7,20 +7,19 @@
   
   
   
-  <title>递归与迭代 | 个人博客</title>
+  <title>强化学习 学习报告 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分清简单的概念">
-<meta name="keywords" content="随笔">
+  <meta name="description" content="强化学习与其它机器学习范式有什么不同呢？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="递归与迭代">
-<meta property="og:url" content="https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/index.html">
+<meta property="og:title" content="强化学习 学习报告">
+<meta property="og:url" content="https://liuzheng007.github.io/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="分清简单的概念">
+<meta property="og:description" content="强化学习与其它机器学习范式有什么不同呢？">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-21T08:41:52.414Z">
+<meta property="og:updated_time" content="2019-05-12T15:07:19.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="递归与迭代">
-<meta name="twitter:description" content="分清简单的概念">
+<meta name="twitter:title" content="强化学习 学习报告">
+<meta name="twitter:description" content="强化学习与其它机器学习范式有什么不同呢？">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -268,11 +267,11 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-递归与迭代" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-强化学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" class="article-date">
-      <time datetime="2017-12-27T09:27:41.000Z" itemprop="datePublished">2017-12-27</time>
+      <a href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/" class="article-date">
+      <time datetime="2019-05-12T05:01:34.000Z" itemprop="datePublished">2019-05-12</time>
 </a>
 
     </div>
@@ -286,7 +285,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      递归与迭代
+      强化学习 学习报告
     </h1>
   
 
@@ -297,10 +296,6 @@
         
 
         
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -308,22 +303,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>分清简单的概念<br><a id="more"></a></p>
-<h5 id="递归的基本概念"><a href="#递归的基本概念" class="headerlink" title="递归的基本概念:"></a>递归的基本概念:</h5><p>程序调用自身的编程技巧称为递归,是函数自己调用自己.</p>
-<p>一个函数在其定义中直接或间接调用自身的一种方法,它通常把一个大型的复杂的问题转化为一个与原问题相似的规模较小的问题来解决,可以极大的减少代码量.递归的能力在于用有限的语句来定义对象的无限集合.</p>
-<p>使用递归要注意的有两点:</p>
-<p>1)递归就是在过程或函数里面调用自身;</p>
-<p>2)在使用递归时,必须有一个明确的递归结束条件,称为递归出口.</p>
-<p>递归分为两个阶段:</p>
-<p>1)递推:把复杂的问题的求解推到比原问题简单一些的问题的求解;</p>
-<p>2)回归:当获得最简单的情况后,逐步返回,依次得到复杂的解.</p>
-<p>利用递归可以解决很多问题:如背包问题,汉诺塔问题,…等.</p>
-<p>斐波那契数列为:0,1,1,2,3,5…</p>
-<p>fib(0)=0;</p>
-<p>fib(1)=1;</p>
-<p>fib(n)=fib(n-1)+fib(n-2);</p>
-<h5 id="迭代"><a href="#迭代" class="headerlink" title="迭代:"></a>迭代:</h5><p>利用变量的原值推算出变量的一个新值.如果递归是自己调用自己的话,迭代就是A不停的调用B.</p>
-<p>递归中一定有迭代,但是迭代中不一定有递归,大部分可以相互转换.能用迭代的不用递归,递归调用函数,浪费空间,并且递归太深容易造成堆栈的溢出.<br>c：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//这是递归</span><br><span class="line">int funcA(int n)</span><br><span class="line">&#123;</span><br><span class="line">    if(n &gt; 1)</span><br><span class="line">       return n+funcA(n-1);</span><br><span class="line">    else </span><br><span class="line">       return 1;</span><br><span class="line">&#125;</span><br><span class="line">//这是迭代</span><br><span class="line">int funcB(int n)</span><br><span class="line">&#123;</span><br><span class="line">    int i,s=0;</span><br><span class="line">    for(i=1;i&lt;n;i++)</span><br><span class="line">       s+=i;</span><br><span class="line">    return s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <p>强化学习与其它机器学习范式有什么不同呢？<br><a id="more"></a><br> 1）没有监督，仅仅只有一个奖励信号，或者说，不直接判定某个状态或动作的好坏，而是给出一个奖励；<br> 2）没有即时的反馈，或者说，反馈是有延迟的。比如围棋，我们当前的落子并不会直接被赋予奖励，而是整盘棋下完之后才有一个反馈（+1表示赢，-1表示输）；<br> 3）数据是序列化的，数据与数据之间是有关的；<br> 4）智能体的行为将影响后续的数据，比如在围棋中，我们当前的落子将会影响棋局的走向。</p>
 
       
     </div>
@@ -332,13 +312,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/">递归与迭代</a></p>
+        <p><span>本文标题:</span><a href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/">强化学习 学习报告</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 刘政 的个人博客">刘政</a></p>
-        <p><span>发布时间:</span>2017年12月27日 - 17时27分</p>
-        <p><span>最后更新:</span>2018年06月21日 - 16时41分</p>
+        <p><span>发布时间:</span>2019年05月12日 - 13时01分</p>
+        <p><span>最后更新:</span>2019年05月12日 - 23时07分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" title="递归与迭代">https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/　　作者: 刘政" title></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/" title="强化学习 学习报告">https://liuzheng007.github.io/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://liuzheng007.github.io/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/　　作者: 刘政" title></span>
         </p>
         <p>
             <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
@@ -349,15 +329,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          abstract
-        
-      </div>
-    </a>
   
+    <a href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">单幅图像人脸三维重建综述</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -367,7 +343,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#递归的基本概念"><span class="toc-number">1.</span> <span class="toc-text">递归的基本概念:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#迭代"><span class="toc-number">2.</span> <span class="toc-text">迭代:</span></a></li></ol>
+    
 </div>
 <style>
     .left-col .switch-btn {
@@ -452,16 +428,16 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" title="上一篇: abstract">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/" title="下一篇: 单幅图像人脸三维重建综述">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/12/cjvl2sy6b000l9gvqoenesqb5/">强化学习 学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/15/cjvl2sy65000d9gvq492hz6bl/">单幅图像人脸三维重建综述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/29/cjvl2sy69000j9gvqpw8wg3bs/">revolution and evolution 《底特律：变人》：人之所以为人</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/27/cjvl2sy67000h9gvq6o29bsea/">基础数学知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/cjvl2sy6100099gvqypnsi68q/">一日内完成python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/cjvl2sy66000g9gvq7lm0rx6v/">基于TensorFlow学习VGG-net</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/cjvl2sy5h00019gvqkg0c7hb1/">DCGAN的原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/cjvl2sy5n00039gvqtm3oi96p/">GAN学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/cjvl2sy64000c9gvq6ldq9nw4/">使用tensorflow实现cnn</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/19/cjvl2sy5z00089gvqykut9vpl/">ubuntu之apt-get与pip的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/18/cjvl2sy6e000q9gvqy2oxd19w/">tensorflow学习笔记整合</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/">abstract</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/">递归与迭代</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/12/cjvl2zyhb000kb4vqjon8iglc/">强化学习 学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/15/cjvl2zyh6000db4vqirc43w7i/">单幅图像人脸三维重建综述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/29/cjvl2zygz0006b4vqdpkje2m6/">revolution and evolution 《底特律：变人》：人之所以为人</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/27/cjvl2zyhr000qb4vq8mz1c67l/">基础数学知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/cjvl2zyh8000gb4vquzio23xk/">一日内完成python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/cjvl2zyhc000mb4vqwhc2heyy/">基于TensorFlow学习VGG-net</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/cjvl2zygo0001b4vqrni2o0ds/">DCGAN的原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/cjvl2zyh30008b4vqh8dixplb/">GAN学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/cjvl2zyh9000ib4vqpm1nh2q8/">使用tensorflow实现cnn</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/19/cjvl2zyh5000bb4vq9bwh7w08/">ubuntu之apt-get与pip的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/18/cjvl2zyh20007b4vqqxrxf4z9/">tensorflow学习笔记整合</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/10/cjvl2zygt0003b4vquo9e737o/">abstract</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/cjvl2zyhq000ob4vqyg9acr6f/">递归与迭代</a></li></ul>
     
 <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
