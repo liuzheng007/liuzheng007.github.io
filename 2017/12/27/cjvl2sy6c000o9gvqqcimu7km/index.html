@@ -7,18 +7,20 @@
   
   
   
-  <title>Archives: 2018/5 | 个人博客</title>
+  <title>递归与迭代 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="计算机专业研究生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="https://liuzheng007.github.io/archives/2018/05/index.html">
+  <meta name="description" content="分清简单的概念">
+<meta name="keywords" content="随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="递归与迭代">
+<meta property="og:url" content="https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="计算机专业研究生">
+<meta property="og:description" content="分清简单的概念">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-21T08:41:52.414Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
-<meta name="twitter:description" content="计算机专业研究生">
+<meta name="twitter:title" content="递归与迭代">
+<meta name="twitter:description" content="分清简单的概念">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -43,8 +45,8 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
-          isArchive: true,
+          isPost: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -266,155 +268,229 @@
         </header>
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-递归与迭代" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" class="article-date">
+      <time datetime="2017-12-27T09:27:41.000Z" itemprop="datePublished">2017-12-27</time>
+</a>
+
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      递归与迭代
+    </h1>
+  
+
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/27/cjvl2sy67000h9gvq6o29bsea/" class="archive-article-date">
-      <time datetime="2018-05-27T09:27:41.000Z" itemprop="datePublished">05-27</time>
-</a>
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/27/cjvl2sy67000h9gvq6o29bsea/">基础数学知识</a>
-    </h1>
-  
-
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
+        <p>分清简单的概念<br><a id="more"></a></p>
+<h5 id="递归的基本概念"><a href="#递归的基本概念" class="headerlink" title="递归的基本概念:"></a>递归的基本概念:</h5><p>程序调用自身的编程技巧称为递归,是函数自己调用自己.</p>
+<p>一个函数在其定义中直接或间接调用自身的一种方法,它通常把一个大型的复杂的问题转化为一个与原问题相似的规模较小的问题来解决,可以极大的减少代码量.递归的能力在于用有限的语句来定义对象的无限集合.</p>
+<p>使用递归要注意的有两点:</p>
+<p>1)递归就是在过程或函数里面调用自身;</p>
+<p>2)在使用递归时,必须有一个明确的递归结束条件,称为递归出口.</p>
+<p>递归分为两个阶段:</p>
+<p>1)递推:把复杂的问题的求解推到比原问题简单一些的问题的求解;</p>
+<p>2)回归:当获得最简单的情况后,逐步返回,依次得到复杂的解.</p>
+<p>利用递归可以解决很多问题:如背包问题,汉诺塔问题,…等.</p>
+<p>斐波那契数列为:0,1,1,2,3,5…</p>
+<p>fib(0)=0;</p>
+<p>fib(1)=1;</p>
+<p>fib(n)=fib(n-1)+fib(n-2);</p>
+<h5 id="迭代"><a href="#迭代" class="headerlink" title="迭代:"></a>迭代:</h5><p>利用变量的原值推算出变量的一个新值.如果递归是自己调用自己的话,迭代就是A不停的调用B.</p>
+<p>递归中一定有迭代,但是迭代中不一定有递归,大部分可以相互转换.能用迭代的不用递归,递归调用函数,浪费空间,并且递归太深容易造成堆栈的溢出.<br>c：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//这是递归</span><br><span class="line">int funcA(int n)</span><br><span class="line">&#123;</span><br><span class="line">    if(n &gt; 1)</span><br><span class="line">       return n+funcA(n-1);</span><br><span class="line">    else </span><br><span class="line">       return 1;</span><br><span class="line">&#125;</span><br><span class="line">//这是迭代</span><br><span class="line">int funcB(int n)</span><br><span class="line">&#123;</span><br><span class="line">    int i,s=0;</span><br><span class="line">    for(i=1;i&lt;n;i++)</span><br><span class="line">       s+=i;</span><br><span class="line">    return s;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数学/">数学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/">递归与迭代</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 刘政 的个人博客">刘政</a></p>
+        <p><span>发布时间:</span>2017年12月27日 - 17时27分</p>
+        <p><span>最后更新:</span>2018年06月21日 - 16时41分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/" title="递归与迭代">https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://liuzheng007.github.io/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/　　作者: 刘政" title></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
+
+
+<nav id="article-nav">
+  
+    <a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          abstract
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/12/cjvl2sy6100099gvqypnsi68q/" class="archive-article-date">
-      <time datetime="2018-05-12T01:10:15.000Z" itemprop="datePublished">05-12</time>
-</a>
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/12/cjvl2sy6100099gvqypnsi68q/">一日内完成python学习</a>
-    </h1>
-  
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#递归的基本概念"><span class="toc-number">1.</span> <span class="toc-text">递归的基本概念:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#迭代"><span class="toc-number">2.</span> <span class="toc-text">迭代:</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
-        <div class="article-info info-on-archive">
-          
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ONEDAY/">ONEDAY</a></li></ul>
+<div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
     </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+
+
+
     
+		<section class="livere" id="comments">
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNjM4Ni8xMjkyMQ==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+</section>
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/08/cjvl2sy66000g9gvq7lm0rx6v/" class="archive-article-date">
-      <time datetime="2018-05-08T05:41:40.000Z" itemprop="datePublished">05-08</time>
-</a>
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/08/cjvl2sy66000g9gvq7lm0rx6v/">基于TensorFlow学习VGG-net</a>
-    </h1>
-  
 
 
-        <div class="article-info info-on-archive">
-          
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tensorflow/">tensorflow</a></li></ul>
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/" title="上一篇: abstract">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
     </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/05/12/cjvl2sy6b000l9gvqoenesqb5/">强化学习 学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/15/cjvl2sy65000d9gvq492hz6bl/">单幅图像人脸三维重建综述</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/07/29/cjvl2sy69000j9gvqpw8wg3bs/">revolution and evolution 《底特律：变人》：人之所以为人</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/27/cjvl2sy67000h9gvq6o29bsea/">基础数学知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/12/cjvl2sy6100099gvqypnsi68q/">一日内完成python学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/cjvl2sy66000g9gvq7lm0rx6v/">基于TensorFlow学习VGG-net</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/cjvl2sy5h00019gvqkg0c7hb1/">DCGAN的原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/29/cjvl2sy5n00039gvqtm3oi96p/">GAN学习报告</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/24/cjvl2sy64000c9gvq6ldq9nw4/">使用tensorflow实现cnn</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/19/cjvl2sy5z00089gvqykut9vpl/">ubuntu之apt-get与pip的区别</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/18/cjvl2sy6e000q9gvqy2oxd19w/">tensorflow学习笔记整合</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/10/cjvl2sy5w00069gvq7wktzl23/">abstract</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/12/27/cjvl2sy6c000o9gvqqcimu7km/">递归与迭代</a></li></ul>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/06/cjvl2sy5h00019gvqkg0c7hb1/" class="archive-article-date">
-      <time datetime="2018-05-06T02:48:08.000Z" itemprop="datePublished">05-06</time>
-</a>
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/06/cjvl2sy5h00019gvqkg0c7hb1/">DCGAN的原理及应用</a>
-    </h1>
-  
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
-        <div class="article-info info-on-archive">
-          
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAN/">GAN</a></li></ul>
-    </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
@@ -509,18 +585,6 @@ ga('send', 'pageview');
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    
-<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
